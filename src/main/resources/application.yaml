@@ -1,24 +1,24 @@
-spring:
-  application:
-    name: notification-service
-
-  config:
-    import: "optional:file:.env[.properties]"
-
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: ${MAIL_USERNAME}    # Thay bằng email của người gửi trong .env
-    password: ${MAIL_PASSWORD}     # Thay bằng App Password trong .env
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-            required: true
-            ssl:
-              trust: smtp.gmail.com
-
 server:
-  port: 8081
+    port: 9090
+
+spring:
+    application:
+        name: notifcation-service
+
+    config:
+        import: "optional:file:.env[.properties]"
+    
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ${MAIL_USERNAME}
+        password: ${MAIL_APP_PASSWORD}
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+                        required: true
+                    ssl:
+                        trust: smtp.gmail.com
