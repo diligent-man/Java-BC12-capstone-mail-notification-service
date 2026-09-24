@@ -1,10 +1,10 @@
-package com.cybersoft.notification_service;
+package com.cybersoft.notifcation_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NotificationServiceApplicationTests {
+class NotifcationServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
